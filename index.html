@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=[device-width], initial-scale=1.0">
+  <link rel="stylesheet" href="2.0.css">
+  <title>Document</title>
+</head>
+<body>
+  <main class="container">
+    <h1>Mensagens codificadas</h1>
+    
+    <form>
+
+      <fieldset>
+        
+        
+          <select name="codigo" id="codigo">
+        <option value="cesar">Cifra de César</option>
+        <option value="base64">Base 64</option>
+      </select>
+
+      <fieldset class="divChave">
+        <label for="chave">Insira um incremento de 1 a 25:</label>
+        <input type="number" id="chave" value="1" max="25" >
+      </fieldset>
+        
+        <fieldset class="radioCod">
+        <div class="divRadio">
+          <input type="radio" name="cod" class="radio" id="cod" />
+          <label for="codificar">Codificar</label>
+        
+          <input type="radio" name="cod" class="radio" id="decod" />
+          <label for="decodificar">Decodificar</label>
+        </div>
+      </fieldset>
+        
+ <label for="mensagem">Insira a mensagem:</label>
+            <textarea id="mensagem" cols="20" rows=""></textarea>
+            <label for="resultado">Resultado:</label>
+            <textarea name="Resultado" id="resultado" rows="3" disabled></textarea>
+            <button id="botaoResultado">Concluir</button>
+
+        </fieldset>
+</form>
+<br><br><br>
+
+                <footer class="icone">
+                  <div>
+                    <a href="https://www.linkedin.com/in/vinicius-correa-62445b253/"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href="https://github.com/vinicius170"><ion-icon name="logo-github"></ion-icon></a>
+                 </div>
+                     <h3>Feito por Vinicius Correa dos Santos</h3>
+                </footer>
+    <script src="2.0.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  </body>
+</html>
